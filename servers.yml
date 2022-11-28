@@ -2,7 +2,7 @@
 AWSTemplateFormatVersion: "2010-09-09"
 
 Description: >
-  Mikias Hundie
+  Nejat Dedgeba
   Udacity Project Deploy a High-Availability Web App using CloudFormation
 
 Parameters:
@@ -328,7 +328,7 @@ Resources:
           systemctl start apache2
           systemctl enable apache2
           rm ../../var/www/html/index.html
-          wget -P ../../var/www/html https://mikias-udacity-proj2.s3.amazonaws.com/index.html
+          wget -P ../../var/www/html https://nejat-udacity-proj2.s3.amazonaws.com/index.html
 
       ImageId: ami-07ebfd5b3428b6f4d
       SecurityGroups:
@@ -432,7 +432,7 @@ Resources:
         - Ref: S3Role
    
 Outputs:
-  #Bonus points for useful outputs!
+ 
   VPC:
     Description: VPC
     Value: !Ref VPC
